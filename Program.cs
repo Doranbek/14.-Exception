@@ -9,7 +9,7 @@ namespace HomeWork14
 
             try
             {
-                Student s = new Student("", "Название", 2);
+                Student s = new Student("", "Арматов", 2);
 
             }
 
@@ -27,7 +27,7 @@ namespace HomeWork14
                   
             try
             {
-                Student s = new Student("Автор", "", 2);
+                Student s = new Student("Максим", "", 2);
 
             }
 

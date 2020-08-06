@@ -6,51 +6,39 @@ namespace HomeWork14
 {
     class Student
     {
-        public string  Name { get; private set; }
-        public string SecondName { get; private set; }
+        public string name;
+        public string surName;
         public int Cours  { get; private set; }
 
-        private string title;
-
-        public string Title
+        
+        public string Name
         {
-            get { return title; }
-            private set 
+            get { return name; }
+            private set
             {
-                if (value == string.Empty) throw new ArgumentNullException("Пустое значение Title");
-                else title = value; 
+                if (value == string.Empty) throw new ArgumentNullException("Пустое значение Name");
+                else name = value;
             }
         }
 
-
-        public string author;
-
-        public string Author
+        public string SurName
         {
-            get { return author; }
+            get { return surName; }
             private set 
             { 
-                if (value == string.Empty) throw new ArgumentNullException("Пустое значение Author");
-                else   author = value; 
+                if (value == string.Empty) throw new ArgumentNullException("Пустое значение SurName");
+                else   surName = value; 
             }
         }
-        public Student()
-        {
-
+        public Student() 
+        { 
         }
-        public Student(string name, string secondName, int cours, string author, string title)
-        {
-            Name = name;
-            SecondName = secondName;
-            Cours = cours;
-            Author = author;
-            Title = title;
-        }
-        public Student(string author, string title, int cours)
+       
+        public Student(string surName, string name, int cours)
         {
             
-            Author = author;
-            Title = title;
+            SurName = surName;
+            Name = name;
             Cours = cours;
 
         }
