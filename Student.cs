@@ -6,8 +6,8 @@ namespace HomeWork14
 {
     class Student
     {
-        public string name;
-        public string surName;
+        private string name;
+        private string surName;
         public int Cours  { get; private set; }
 
         
